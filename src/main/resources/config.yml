@@ -1,0 +1,6 @@
+# Placeholder de PlaceholderAPI que se usa para %rank%
+# Ejemplos: "%luckperms_primary_group_name%", "%vault_rank%"
+rank-placeholder: "%luckperms_primary_group_name%"
+
+# Valor de %rank% si no hay PlaceholderAPI o el placeholder falla
+default-rank: "Default"
