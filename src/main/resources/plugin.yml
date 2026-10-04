@@ -1,0 +1,18 @@
+name: UltimateTitles
+version: 1.0.0
+main: me.bughatti.ultimatetitles.UltimateTitles
+api-version: "1.20"
+author: Bughatti
+description: Titles y subtitles para todos los eventos del servidor
+softdepend: [PlaceholderAPI]
+
+commands:
+  ultimatetitles:
+    description: Comando principal de UltimateTitles
+    aliases: [ut, utitle, utitles, titulo, title]
+    usage: /<command> help
+
+permissions:
+  ultimatetitles.admin:
+    description: Acceso a todos los comandos de UltimateTitles
+    default: op
