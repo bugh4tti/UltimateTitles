@@ -1,0 +1,71 @@
+# Variables disponibles en todos los eventos:
+# %user% %rank% %level% %death% %kill% %world% %online%
+# Variables extra por evento:
+# kill / death:  %killer% %victim%
+# world-change:  %from%
+# Colores: &a, &l, etc. y hex con &#RRGGBB
+# Cualquier evento nuevo que agregues acá se puede mandar con /ut send <jugador> <evento>
+# sound: usar el formato de Minecraft (ej: entity.player.levelup). Dejar "" para sin sonido.
+
+join-first:
+  enabled: true
+  title: "&#00E5FF&l¡BIENVENIDO!"
+  subtitle: "&7Es tu primera vez en el server, &f%user%"
+  fade-in: 10
+  stay: 70
+  fade-out: 20
+  sound: "entity.player.levelup"
+
+join:
+  enabled: true
+  title: "&#55FF55&lBienvenido de vuelta"
+  subtitle: "&7Rango: &f%rank% &8| &7Nivel: &f%level%"
+  fade-in: 10
+  stay: 50
+  fade-out: 20
+  sound: "entity.experience_orb.pickup"
+
+kill:
+  enabled: true
+  title: "&#FF5555&lKILL"
+  subtitle: "&7Mataste a &f%victim% &8| &7Kills: &f%kill%"
+  fade-in: 5
+  stay: 30
+  fade-out: 10
+  sound: "entity.player.attack.crit"
+
+death:
+  enabled: true
+  title: "&#AA0000&lMORISTE"
+  subtitle: "&7Te mató &f%killer% &8| &7Muertes: &f%death%"
+  fade-in: 5
+  stay: 40
+  fade-out: 10
+  sound: "entity.wither.hurt"
+
+respawn:
+  enabled: true
+  title: "&#FFAA00&lRENACISTE"
+  subtitle: "&7Volvé con todo, &f%user%"
+  fade-in: 5
+  stay: 30
+  fade-out: 10
+  sound: ""
+
+world-change:
+  enabled: true
+  title: "&#AA55FF&l%world%"
+  subtitle: "&7Venís de &f%from%"
+  fade-in: 10
+  stay: 40
+  fade-out: 10
+  sound: "entity.enderman.teleport"
+
+level-up:
+  enabled: true
+  title: "&#FFFF55&l¡NIVEL %level%!"
+  subtitle: "&7Seguí así, &f%user%"
+  fade-in: 5
+  stay: 40
+  fade-out: 10
+  sound: "entity.player.levelup"
